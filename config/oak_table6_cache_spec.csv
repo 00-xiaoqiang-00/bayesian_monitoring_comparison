@@ -1,0 +1,5 @@
+method,relative_cache,format
+Win Ratio,winratio/OAK__H1_observed.rds,winratio_matrix
+Cox,validate_stats_H1_observed_OAK_mix_v4_H0_H1calibration_H1observed_cox_iter2000_warmup1000.rds,stats_list
+RMST,validate_stats_10k_H1_observed_OAK_mix_v4_tau3_4p5_6_18_priorN0_1p5_explicit.rds,stats_list
+RMUT,validate_stats_H1_observed_OAK_mix_v4_RMUT3STATE_v3_weakpriors_twoAFT_w0.50_tau3-4.5-6-18.rds,stats_list

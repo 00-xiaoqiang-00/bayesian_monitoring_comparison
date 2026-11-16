@@ -1,0 +1,51 @@
+{
+  "target": "Treatment-minus-control DGM RMST and RMUT contrasts at the scheduled method-specific restriction windows (Table S2E).",
+  "units": "months",
+  "cases": [
+    "survival_colon",
+    "OAK",
+    "IMpower131",
+    "KEYNOTE-598"
+  ],
+  "scenarios": [
+    "H1-standard",
+    "H1-observed"
+  ],
+  "looks_per_case": 4,
+  "numerical_method": {
+    "integration": "Trapezoidal integration of bivariate-lognormal composite survival differences and utility-weighted survival differences.",
+    "trapezoidal_intervals": 1500,
+    "grid_nodes": 1501,
+    "first_grid_time_months": 1e-09,
+    "composite_survival": "Sum over mixture components of weight times Phi_2(-a(t), -b(t); rho).",
+    "death_survival": "Sum over mixture components of weight times [1-Phi(b(t))].",
+    "cdf_evaluation": "scipy.stats.multivariate_normal frozen two-dimensional cdf with its default numerical settings.",
+    "RMUT_definition": "Integral of (1-w_R)*(S_D,treatment-S_D,control) + w_R*(S_C,treatment-S_C,control).",
+    "RMUT_weight_source": "Locked trial_process.csv field RMUT_w_R; all four released cases use 0.5.",
+    "censoring_in_target": false
+  },
+  "portable_script": {
+    "path": "workflows/population_estimands/compute_interim_estimands.py",
+    "sha256": "dfe8a2f83a3ad3331872d2e847b0366bd59ea15357f11222c8e33791451053e5"
+  },
+  "saved_result": {
+    "path_from_submission_root": "04_Data_and_Results/Population_Estimands/Interim/interim_true_estimands.csv",
+    "sha256": "12b3c2416662d986d6494938ef0aa3315a5bc7216f5ed621bc9e68274e5fd139",
+    "rows": 32,
+    "horizon_columns": [
+      "tau_rmst_months",
+      "tau_rmut_months"
+    ]
+  },
+  "input_sha256": {
+    "dgm_parameters.csv": "3e415795420431d958271d32dfea6463e8d420fcf6adf9b207c641599ebffd40",
+    "trial_process.csv": "78dfeca807d618ec3419d8819dc22533e8027de62d653ba368ccf91807e75c9c",
+    "analysis_schedule.csv": "08953509266351ba2b5eab943813a5839593f29af04157f145a88a37ccbb334b"
+  },
+  "comparison_absolute_tolerance_months": 1e-12,
+  "precision_note": "The saved table is not overwritten. Compare numerical values within the stated tolerance; floating-point CSV formatting need not be byte-identical. Cross-version bitwise equality is not promised. The calculation adds no trial-data, DGM-fit or structural uncertainty.",
+  "numerical_runtime": {
+    "numpy": "2.1.3",
+    "scipy": "1.15.3"
+  }
+}

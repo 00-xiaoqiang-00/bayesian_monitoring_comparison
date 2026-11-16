@@ -1,0 +1,22 @@
+{
+  "case": "KEYNOTE-598",
+  "curve_source": "Published PFS and OS Kaplan-Meier curves and numbers at risk from Boyer et al. (2021), Pembrolizumab Plus Ipilimumab or Placebo for Metastatic Non-Small-Cell Lung Cancer With PD-L1 Tumor Proportion Score >=50%.",
+  "coordinate_format": "Two headerless columns: time in months, survival probability",
+  "model": "Two-component bivariate lognormal with one shared component label per patient",
+  "fitting_target": "Joint PFS/OS marginal-curve calibration; not a likelihood from paired patient data",
+  "rho": 0.5,
+  "pi_bounds": [
+    0.05,
+    0.95
+  ],
+  "minimum_progression_log_sd": 0.15,
+  "maximum_death_log_sd": 1.5,
+  "initializations_per_arm": 6,
+  "initialization_role": "Earlier independent-margin and OS-locked numerical fits supply starting points only; only rho=0.5 rows are used",
+  "maximum_supported_curve_difference": 0.05,
+  "maximum_median_difference_months": 0.25,
+  "maximum_12_month_survival_difference": 0.012,
+  "feasibility_tolerance": 2e-05,
+  "reference_role": "Full-precision selected regularized parameters, used only for post-fit comparison; never optimizer starts",
+  "locked_configuration_policy": "New fits never overwrite the simulation DGM configuration"
+}

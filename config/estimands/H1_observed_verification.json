@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "scenario": "H1-observed",
+  "source_sha256": {
+    "compute_h1_observed_estimands.py": "b27c950c7acb55c81845dec97df860e276708f2fdeb23ba1056a9b5567f79c19",
+    "compute_dgm_estimands.py": "461e1d210f5f285ae345a89751c3729aec3123bed7925745027085a18700873a"
+  },
+  "verified_archive_case_order": [
+    "survival_colon",
+    "OAK",
+    "KEYNOTE-598",
+    "IMpower131"
+  ],
+  "portable_sha256": {
+    "compute_h1_observed_estimands.py": "8bccabd8e6bf65b87539816eae1d0b869eced913987e927765f39916311994b9"
+  },
+  "current_helper_sha256": "91f28b91b9b42f2996fc4df67388044143619c5500375bc66b40c1445afc2fb3",
+  "input_sha256": {
+    "dgm_parameters.csv": "3e415795420431d958271d32dfea6463e8d420fcf6adf9b207c641599ebffd40",
+    "trial_process.csv": "78dfeca807d618ec3419d8819dc22533e8027de62d653ba368ccf91807e75c9c"
+  },
+  "archive_sha256": {
+    "cox_batches.csv": "44d572c04fcfdc55ea4e643f804c434101763c2267d84b0fed1c1d7715ff08cd",
+    "H1_observed_true_estimands.csv": "9098c17245b2156b956154fa259a8e66cffa24db4d18df0b0a2735527898922f",
+    "integration_diagnostics.json": "dd6fa8bd4fd4fca3a055f8417477d690e657e6f376105769c17a071c737402bf",
+    "wr_batches.csv": "971639a6b9c9274e86d5cfa5a8bcd903a397bbc9234dbdcf788cc526ff306c95"
+  },
+  "scientific_configuration": {
+    "path": "config/estimands/H1_observed_calculation.json",
+    "sha256": "95addb3ab9b5442a760302f75812917e892af4e5f720515d4b938ff3f2d9dac2"
+  }
+}

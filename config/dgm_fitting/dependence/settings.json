@@ -1,0 +1,42 @@
+{
+  "rho_grid": {
+    "survival_colon": {
+      "low": 0.7,
+      "high": 0.98,
+      "baseline": 0.908254
+    },
+    "OAK": {
+      "low": 0.5,
+      "high": 0.9,
+      "baseline": 0.7
+    },
+    "IMpower131": {
+      "low": 0.3,
+      "high": 0.7,
+      "baseline": 0.5
+    },
+    "KEYNOTE-598": {
+      "low": 0.3,
+      "high": 0.7,
+      "baseline": 0.5
+    }
+  },
+  "target_endpoints": {
+    "survival_colon": [
+      "recurrence_cif",
+      "OS"
+    ],
+    "OAK": [
+      "PFS",
+      "OS"
+    ],
+    "IMpower131": [
+      "PFS",
+      "OS"
+    ],
+    "KEYNOTE-598": [
+      "PFS",
+      "OS"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "case": "survival_colon",
+  "method": "Cox",
+  "purpose": "H0 and H1-standard full posterior-probability paths for calibration",
+  "source_sha256": "c33c46551bb5f791b5174c9418b10225c1c657ffd87fc0f1b4dccb70607b2568",
+  "source_dgm_sha256": "b2ca7fbf1b5c4dd1c9a4e5efbe7dce288befe92d20c1e73271343277390674ef",
+  "implementation": "src/methods/cox/calibration/survival_colon/build_calibration_pp.R",
+  "implementation_sha256": "d761f95fff2cf1e5240e71ffaa1e912b73c3d41827bc3a8ec4304d6fdc8c6f21",
+  "attempts_per_scenario": 10000,
+  "scenarios": [
+    "H0",
+    "H1_calibration"
+  ],
+  "data_seed_per_scenario": 777,
+  "model_seed_formula": "12345+j",
+  "chains": 4,
+  "iterations": 2000,
+  "warmup": 1000,
+  "rhat_max": 1.01,
+  "ess_bulk_min": 400,
+  "ess_tail_min": 400,
+  "cache_tag": "survival_colon_v1_H0_H1calibration_H1observed_cox_iter2000_warmup1000",
+  "cache_files": [
+    "validate_stats_H0_survival_colon_v1_H0_H1calibration_H1observed_cox_iter2000_warmup1000.rds",
+    "validate_stats_H1_calibration_survival_colon_v1_H0_H1calibration_H1observed_cox_iter2000_warmup1000.rds"
+  ],
+  "complete_attempted_paths_saved": true,
+  "OC_replay_performed": false,
+  "H1_observed_used_for_selection": false
+}

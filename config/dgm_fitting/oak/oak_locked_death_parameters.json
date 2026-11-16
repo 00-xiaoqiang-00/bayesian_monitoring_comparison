@@ -1,0 +1,12 @@
+{
+  "treatment": {
+    "mu_d": 2.636754680552583,
+    "sigma_d": 1.1709,
+    "source": "locked_from_IPD_anchor_report:median_13.9678"
+  },
+  "control": {
+    "mu_d": 2.3088355183235585,
+    "sigma_d": 1.0177,
+    "source": "locked_from_IPD_anchor_report:median_10.0627"
+  }
+}

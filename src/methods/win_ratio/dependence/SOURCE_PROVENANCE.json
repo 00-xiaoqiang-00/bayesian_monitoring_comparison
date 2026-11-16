@@ -1,0 +1,26 @@
+[
+  {
+    "path": "src/methods/win_ratio/dependence/audit_winratio_rho.R",
+    "sha256": "55335a01574afdda2fb860301b4f8461f0dd64c0ba8e6c4b486da1d3f14cfb1f"
+  },
+  {
+    "path": "src/methods/win_ratio/dependence/preflight_winratio_rho.R",
+    "sha256": "d6867f575b01bb382b5953b247565117291fc1baa813168d3793836e9ed66b22"
+  },
+  {
+    "path": "src/methods/win_ratio/dependence/prepare_runtime.R",
+    "sha256": "0bec2a3ed81d9369e7fbc98c419bc8081f5592673ffd12447f27a29225848690"
+  },
+  {
+    "path": "src/methods/win_ratio/dependence/validate_winratio_rho.R",
+    "sha256": "d3f4da24b63d493b3d8f7e8b32ea4822c45938bd3d5685274330599409890be7"
+  },
+  {
+    "path": "src/methods/win_ratio/dependence/verify_runtime_sources.R",
+    "sha256": "7ea396a447ac0343f310e7c03fbf50fbd33a62c6d7c1218fd939c005d0b93822"
+  },
+  {
+    "path": "src/methods/win_ratio/dependence/winratio_rho_common.R",
+    "sha256": "994977fde80800e390cec44f7e69bf4ea3c22a0228af3dd90aa1c40f08c6197e"
+  }
+]
